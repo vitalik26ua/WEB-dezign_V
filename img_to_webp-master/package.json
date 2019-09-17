@@ -1,0 +1,6 @@
+{
+	"devDependencies": {
+		"glob": "^7.1.4",
+		"webp-converter": "^2.2.3"
+	}
+}
