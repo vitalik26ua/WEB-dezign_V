@@ -24,6 +24,9 @@ if (h1>h2) {
   $('.comments-items').css('height',h1)
 }else {
   $('.comments-items').css('height',h2)
-}
+};
+
+// колендар
+
 
 });
