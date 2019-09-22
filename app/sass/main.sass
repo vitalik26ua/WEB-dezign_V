@@ -197,6 +197,16 @@ section
 	&:hover
 		transition: 0.7s
 		opacity: 0.4
+.owl-carousel
+	.owl-item
+		img
+			width: 50px
+	.owl-dot
+		opacity: 0.4
+		span
+			background: #1b1b1c
+		&.active
+			opacity: 1
 footer
 	background-color: #1b1b1c
 	padding-top: 80px
@@ -353,6 +363,9 @@ footer
 		margin-bottom: 30px
 		iframe
 			min-height: 340px
++media-breakpoint-down(xl)
+	.phone
+		font-size: 14px
 +media-breakpoint-down(sm)
 	footer
 		padding: 30px 0 0 0

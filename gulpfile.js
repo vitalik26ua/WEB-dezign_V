@@ -43,7 +43,7 @@ gulp.task('scripts', function() {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
 		'node_modules/@fortawesome/fontawesome-free/js/all.js', // fontawesome
-		// 'node_modules/owl.carousel2/dist/owl.carousel.min.js', // owl.carousel
+		'node_modules/owl.carousel2/dist/owl.carousel.min.js', // owl.carousel
 		// 'node_modules/tiny-date-picker/dist/date-range-picker.min.js', // tiny-date-picker
 		// 'node_modules/tiny-date-picker/dist/tiny-date-picker.min.js', // tiny-date-picker
 		'app/js/_lazy.js', // JS library plug-in example

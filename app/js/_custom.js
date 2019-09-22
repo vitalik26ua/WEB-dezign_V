@@ -1,5 +1,22 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+// Карусель
+  $('.owl-carousel').owlCarousel({
+      loop:true,
+      margin:30,
+      autoHeight:true,
+      dot:true,
+      responsive:{
+          600:{
+              items:1
+          },
+          1000:{
+              items:2
+          }
+      }
+  })
+
+//
   var h1 = 0;
   var h2 = 0;
 $('.comments-items .col-md-6').each(function(index) {
@@ -25,6 +42,8 @@ if (h1>h2) {
 }else {
   $('.comments-items').css('height',h2)
 };
+
+
 
 // колендар
 
