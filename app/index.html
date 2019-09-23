@@ -6,11 +6,12 @@
 	<meta charset="utf-8">
 
 	<title>Продажа квартир</title>
-	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+	<meta name="description" content="">
 
 	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#2a2a2a">
 
-	<link rel="icon" href="img/favicon.png">
+	<link rel="icon" href="img/logo.png">
 	<meta property="og:image" content="img/@1x/preview.jpg">
 
 	<link rel="stylesheet" href="css/styles.min.css">
@@ -21,112 +22,338 @@
 
 	<header>
 		<div class="container">
-			<div class="row">
-				<div class="col-md-1">
+			<div class="row justify-content-center desktop">
+				<div class="col-lg-1">
 					<a href="/" class="logo"></a>
 				</div>
-				<div class="col-md-7">
+				<div class="col-xl-7 col-lg-6 col-12">
 					<ul class="header_menu">
 						<li><a href="#">Квартиры</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">О копании</a></li>
 					</ul>
 				</div>
-				<div class="col-md-2">
+				<div class="col-xl-2 col-lg-3 col-6">
+					<a href="tel:+89052550010" class="phone"><i class="fas fa-phone"></i> 8 (905) 255-00-10</a>
+				</div>
+				<div class="col-lg-2 col-6">
+						<a href="" class="call_back btn">Перезвоните мне</a>
+				</div>
+			</div>
+			<!-- <div class="row justify-content-center phone-dev">
+				<div class="col-md-1">
+					<a href="/" class="logo"></a>
+				</div>
+				<div class="col-lg-7">
+					<ul class="header_menu">
+						<li><a href="#">Квартиры</a></li>
+						<li><a href="#">Отзывы</a></li>
+						<li><a href="#">О копании</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2">
 					<a href="tel:+89052550010" class="phone"><i class="fas fa-phone"></i> 8 (905) 255-00-10</a>
 				</div>
 				<div class="col-md-2">
 						<a href="" class="call_back btn">Перезвоните мне</a>
 				</div>
-			</div>
+			</div> -->
+
 		</div>
 	</header>
-	<section class="zakaz-apartament">
+	<section class="catalog">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<h1>2-комнатная квартира, 10-я линия В.О., 57</h1>
+					<h1>Наши квартиры</h1>
 				</div>
-				<div class="col-md-6 galery">
-					<!-- <picture>
-						<source srcset="img/@1x/pf-1.webp" type="image/webp">
-						<img class="lazy img-responsive logo-img"
-						src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
-						data-src="img/@1x/pf-1.png"
-						alt="">
-					</picture> -->
+			</div>
+			<div class="row catalog-list">
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-1.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-1.png"
+								alt="">
+							</picture>
+							<span class="price">7000</span>
+						</div>
+						<div class="info">
+							<p class="type">1-комнатная</p>
+							<p class="address">Лиговский пр-т, 130</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>2 гостя</span> <i class="fas fa-bed"></i> <span>2 спальных места</span></div>
+							</div>
+						</div>
+					</a>
 				</div>
-				<div class="col-md-6 info">
-					<h5>Цена / сутки:</h5>
-					<h2>12 000₽</h2>
-					<a href="#bron" class="btn section-btn">Забронировать</a>
-					<p>Двухкомнатная квартира-студия класса люкс расположена на четвертом этаже шестиэтажного дома.  Во дворе охраняемая парковка. Ресторан и кафе на первом этаже дома.</p>
-					<p class="uslug"><i class="fas fa-user"></i> 5 гостей  <i class="fas fa-bed"></i> 6 спальных мест</p>
-					<p class="uslug"><i class="fas fa-check"></i> Кабельное ТВ, игровая консоль, WiFi</p>
-					<p class="uslug"><i class="fas fa-check"></i> Фен, утюг, гладильная доска, предметы гигиены, фильтр для воды, кофемашина, чай, печенье</p>
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-2.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-2.png"
+								alt="">
+							</picture>
+							<span class="price">6500</span>
+						</div>
+						<div class="info">
+							<p class="type">студия</p>
+							<p class="address">ул. Некрасова, 22</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>1 гость</span> <i class="fas fa-bed"></i> <span>2 спальных места</span></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-3.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-3.png"
+								alt="">
+							</picture>
+							<span class="price">7000</span>
+						</div>
+						<div class="info">
+							<p class="type">студия</p>
+							<p class="address">ул. 4-я Красноармейская, 2</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>3 гостя</span> <i class="fas fa-bed"></i> <span>4 спальных места</span></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-4.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-4.png"
+								alt="">
+							</picture>
+							<span class="price">9500</span>
+						</div>
+						<div class="info">
+							<p class="type">1-комнатная</p>
+							<p class="address">ул. Ораниенбаумская, 24</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>2 гостя</span> <i class="fas fa-bed"></i> <span>2 спальных места</span></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-5.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-5.png"
+								alt="">
+							</picture>
+							<span class="price">8000</span>
+						</div>
+						<div class="info">
+							<p class="type">1-комнатная</p>
+							<p class="address">Невский пр-т, 113</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>3 гостя</span> <i class="fas fa-bed"></i> <span>3 спальных места</span></div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-6 col-lg-4">
+					<a href="" class="item">
+						<div class="photo">
+							<picture>
+								<source srcset="img/@1x/kv-6.webp" type="image/webp">
+								<img class="lazy img-responsive logo-img"
+								src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+								data-src="img/@1x/kv-6.png"
+								alt="">
+							</picture>
+							<span class="price">12 000</span>
+						</div>
+						<div class="info">
+							<p class="type">2-комнатная</p>
+							<p class="address">10-я линия В.О., 57</p>
+							<div class="other">
+								<div class="guest"><i class="fas fa-user"></i> <span>5 гостей</span> <i class="fas fa-bed"></i> <span>6 спальных мест</span></div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<a href="" class="btn section-btn">Все квартиры</a>
+			</div>
+		</div>
+	</section>
+	<section class="home-comments">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h1>Отзывы</h1>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d19225.280115016005!2d24.710366910567757!3d48.92795088600727!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1568817655289!5m2!1sru!2sua" width="100%"  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+					<div class="owl-carousel owl-theme">
+					    <div class="item">
+								<div class="otziv">
+									<p>Спасибо за домашний уют и тепло! С вами я точно знаю, что лучшего места я не найду за доступные деньги. Идеальный порядок, чистота. Спасибо вам!</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-1.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-1.png"
+											alt="Татьяна">
+										</picture>
+										<span class="name">Татьяна, г. Калининград</span>
+										<br>
+										<span class="data">22 октября 2018</span>
+									</div>
+								</div>
+					    </div>
+					    <div class="item">
+								<div class="otziv">
+									<p>Очень чисто и аккуратно. Недавно сделан ремонт. Фотографии соответствуют реальности. На кухне есть все необходимое. Спасибо!</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-2.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-2.png"
+											alt="Николай">
+										</picture>
+										<span class="name">Николай, г. Новосибирск</span>
+										<br>
+										<span class="data">14 сентября 2018</span>
+									</div>
+								</div>
+					    </div>
+							<div class="item">
+								<div class="otziv">
+									<p>Комфортная кварaтира, спальные места очень удобные, все новое и чистое. Абсолютно всем знакомым рекомендую ваш сервис!</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-3.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-3.png"
+											alt="Валерий">
+										</picture>
+										<span class="name">Валерий, г. Москва</span>
+										<br>
+										<span class="data">3 сентября 2018</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="otziv">
+									<p>От всей души рекомендую! Ваш клиент с 2009 года.</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-4.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-4.png"
+											alt="Олег">
+										</picture>
+										<span class="name">Олег, г. Самара</span>
+										<br>
+										<span class="data">27 августа 2018</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="otziv">
+									<p>Вежливость и внимательность сотрудников, отличные условия проживания, оперативность. Всё прекрасно! Спасибо!
+											Снимала квартиру на канале Грибоедова, недалеко от Казанского собора. Квартира просто космическая! Высокие потолки, современный ремонт, красивая мебель в скандинаском стиле, много цветов. И волшебный вид из окна!
+											Буду рекомендовать вас всем знакомым!</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-5.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-5.png"
+											alt="Ирина">
+										</picture>
+										<span class="name">Ирина, г. Новокузнецк</span>
+										<br>
+										<span class="data">11 августа 2018</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="otziv">
+									<p>Отличные апартменты. Замечательное обслуживание, вы просто супер! Постоянно останавливаюсь только здесь.</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-6.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-6.png"
+											alt="Ольга">
+										</picture>
+										<span class="name">Ольга, г. Ростов</span>
+										<br>
+										<span class="data">19 июля 2018</span>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<div class="otziv">
+									<p>Большое спасибо за теплый прием и внимание. Апартаменты понравились. Особую благодарность хочу выразить администратору Юлии, вы нас очень выручили!</p>
+									<div class="autor">
+										<picture>
+											<source srcset="img/@1x/oz-6.webp" type="image/webp">
+											<img class="lazy img-responsive logo-img"
+											src="data:image/gif;base64,R0lGODlhrwBoAIAAAP///wAAACH5BAEAAAEALAAAAACvAGgAAAKljI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1is1qt9yu9wsOi8fksvmMTqvX7Lb7DY/L5/S6/Y7P6/f8vv8PGCg4SFhoeIiYqLjI2Oj4CBkpOUlZaXmJmam5ydnp+QkaKjpKWmp6ipqqusra6voKGys7S1tre4ubq7vL2+v7CxwsvFMAADs="
+											data-src="img/@1x/oz-6.png"
+											alt="Ольга">
+										</picture>
+										<span class="name">Ольга, г. Ростов</span>
+										<br>
+										<span class="data">19 июля 2018</span>
+									</div>
+								</div>
+							</div>
 					</div>
 				</div>
 			</div>
-			<div class="row" id="bron">
-				<div class="col-12">
-					<h1>Забронировать квартиру</h1>
-				</div>
-				<div class="col-md-6">
-					<div class="bron-input">
-						<!-- <div id="datepicker"></div> -->
-						<div class="permanent-cal-container"></div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="bron-input">
-						<h4>Оставить заявку</h4>
-						<h5>Заселение и выезд</h5>
-						<div class="ex-inputs">
-		            <input class="ex-inputs-start"/>
-								<input type="text" class="hours" name="hours" value="в " required="required">
-		            -
-		            <input class="ex-inputs-end"/>
-								<input type="text" class="hours" name="hours" value="в " required="required">
-		          <div class="ex-inputs-picker"></div>
-		        </div>
-						<h5>Имя*</h5>
-						<input type="text" name="имя" value="" required="required" style="width: 100%">
-						<div class="item" style="padding-right: 16px">
-							<h5>Телефон*</h5>
-							<input type="text" name="телефон" value="" required="required">
-						</div>
-						<div class="item">
-							<h5>E-mail</h5>
-							<input type="text" name="E-mail" value="" required="required">
-						</div>
-					</div>
-				</div>
-				<div class="col-12">
-					<a href="#" class="btn section-btn">Забронировать</a>
-				</div>
+			<div class="row">
+				<a href="" class="btn section-btn">Все отзывы</a>
 			</div>
 		</div>
 	</section>
-	<footer>
+	<!-- <footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-md-1">
 					<a href="/" class="logo"></a>
 				</div>
-				<div class="col-md-5">
+				<div class="col-md-6">
 					<ul class="header_menu">
 						<li><a href="#">Квартиры</a></li>
 						<li><a href="#">Отзывы</a></li>
 						<li><a href="#">О копании</a></li>
 					</ul>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-3">
 					<div class="address">
 						<i class="fas fa-map-marker-alt"></i>
 						<p>Санкт-Петербург, набережная реки<br>Мойки, дом 40, литер «А», офис 210</p>
@@ -148,7 +375,7 @@
 					<a class="bottom_a" href="">Правила использования</a>
 			</div>
 		</div>
-	</footer>
+	</footer> -->
 
 	<script src="js/scripts.min.js"></script>
 

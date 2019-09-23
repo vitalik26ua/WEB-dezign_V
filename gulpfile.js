@@ -46,7 +46,6 @@ gulp.task('scripts', function() {
 		'node_modules/owl.carousel2/dist/owl.carousel.min.js', // owl.carousel
 		'node_modules/tiny-date-picker/dist/date-range-picker.min.js', // tiny-date-picker
 		'node_modules/tiny-date-picker/dist/tiny-date-picker.min.js', // tiny-date-picker
-		'app/js/_jquery-ui.min.js', // jquery-ui
 		'app/js/_lazy.js', // JS library plug-in example
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
