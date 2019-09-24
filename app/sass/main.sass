@@ -75,6 +75,8 @@ p,ul
 header
 	background-color: $accent
 	line-height: 80px
+	span
+		display: none
 .header_menu
 	margin: 0
 	li
@@ -209,12 +211,12 @@ section
 			opacity: 1
 footer
 	background-color: #1b1b1c
-	padding-top: 80px
+	padding-top: 40px
 	.logo
 		top: 0
 		margin-top: 0
 	.address
-		margin-bottom: 50px
+		margin-bottom: 20px
 	.fa-map-marker-alt
 		position: absolute
 		margin-left: -17px
@@ -224,7 +226,7 @@ footer
 		background-color: #fff
 		margin: 0
 	.bottom_a
-		line-height: 80px
+		line-height: 60px
 		text-align: center
 		font-size: 12px
 		font-weight: 400
@@ -467,7 +469,119 @@ footer
 		margin-bottom: 30px
 		iframe
 			min-height: 340px
+.burgers
+	display: none
+	position: absolute
+	margin-top: 17.5px
+	height: 25px
+	cursor: pointer
+	z-index: 2
+.burger
+	width: 35px
+	height: 5px
+	background-color: $text
+	margin-top: 10px
+	&::before,&::after
+		width: 35px
+		height: 5px
+		background-color: $text
+		position: absolute
+		content: ""
+		transition: 0.8s
+	&::after
+		margin-top: 10px
+		transition: 0.8s
+	&::before
+		margin-top: -10px
+		transition: 0.8s
++media-breakpoint-down(lg)
+	footer
+		font-size: 15px
+		.phone
+			font-size: 15px
+		.header_menu
+			li
+				padding: 0 12px
+				margin-bottom: 15px
+				a
+					text-align: center
+					font-size: 18px
++media-breakpoint-down(md)
+	header
+		.phone
+			font-size: 14px
+		.header_menu
+			li
+				padding: 0 10px
+				a
+					font-size: 16px
+	footer
+		.header_menu
+			li
+				padding: 0 12px
+				margin-bottom: 15px
+				a
+					text-align: center
+					font-size: 15px
 +media-breakpoint-down(sm)
+	header
+		height: auto
+		span
+			line-height: 60px
+			position: relative
+			text-align: center
+			font-size: 25px
+			display: block
+		.burgers
+			display: block
+			cursor: pointer
+		.logo
+			display: none
+		.menu_hidden
+			height: 60px
+			transition: 0.8s
+			.logo
+				margin: 10px auto
+				right: 15px
+				float: left
+				left: 25%
+			.header_menu,.phone_m,.call_back
+				display: none
+				transition: 0.8s
+		.menu_visible
+			height: 290px
+			transition: 0.8s
+			.burger
+				background-color: transparent
+				transition: 0.8s
+				&::after
+					transform: rotate(45deg)
+					margin-top: 0
+					transition: 0.8s
+				&::before
+					transform: rotate(-45deg)
+					margin-top: 0
+					transition: 0.6s
+			.header_menu,.phone_m,.call_back
+				display: block
+				transition: 0.8s
+		position: relative
+		.logo
+			position: relative
+			top: 0
+			margin-top: 10px
+		line-height: 20px
+		.header_menu
+			li
+				float: none
+				text-align: center
+				margin: 15px auto
+		.phone
+			margin: 0 auto 15px
+			display: block
+			text-align: center
+		.call_back
+			margin: 0 auto 15px
 	.home-comments
 		display: none
 	footer
@@ -489,9 +603,3 @@ footer
 		.phone
 			display: block
 			text-align: center
-		.header_menu
-			li
-				padding: 0 12px
-				margin-bottom: 15px
-				a
-					text-align: center

@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
 
+// Бургер
+    $('.burgers').click(function(){
+      $('.menu_hidden').toggleClass('menu_visible');
+    });
+
 // Галерея
   if ($("div").is(".galery")) {
     function galery_small() {
